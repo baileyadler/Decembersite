@@ -2,9 +2,9 @@ body{
     background-color: rgb(139, 204, 241);
 }
 h1{
-    font-family: "homage-condensed", serif;
-font-weight: 500;
-font-style: normal;
+    font-family: "gimlet-display", serif;
+    font-weight: 400;
+    font-style: normal;
 margin:30px;
 }
 p{
