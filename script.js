@@ -1,28 +1,29 @@
+"use strict";
 //generate prefix of name
 function genPrefix(firstName) {
   if (firstName.length > 4) {
-    return "The Great";
+    return "Plane";
   } else {
-    return "Master";
+    return "Ferry";
   }
 }
 //generate first name of name
 function genFirstName(firstName) {
   const firstLetter = firstName.charAt(0).toLowerCase();
   if (firstLetter === "a") {
-    return "Jeff";
+    return "Aruba";
   } else if (firstLetter === "b") {
-    return "Mary";
+    return "Bermuda";
   } else if (firstLetter === "c") {
-    return "Henry";
+    return "Connecticut";
   } else if (firstLetter === "d") {
-    return "Patty";
+    return "Delaware";
   } else if (firstLetter === "e") {
-    return "Fred";
+    return "Europe";
   } else if (firstLetter === "f") {
-    return "Eddy";
+    return "Florida";
   } else {
-    return "Joe";
+    return "Home";
   }
 }
 
@@ -32,9 +33,9 @@ function genMiddleName(roadType, favColor) {
     return `${favColor}ridge`;
   } else if (roadType === "street") {
     return `${favColor}son`;
-  } else if (roadType === `court`) {
+  } else if (roadType === "court") {
     return `${favColor}field`;
-  } else if (roadType === "lane") {
+  } else if (roadType === "avenue") {
     return `${favColor}man`;
   } else {
     return `${favColor}stone`;
@@ -45,19 +46,19 @@ function genMiddleName(roadType, favColor) {
 function genLastName(lastName) {
   const lastLetter = lastName.charAt(lastName.length - 1).toLowerCase();
   if (lastLetter === "a") {
-    return "Sweepy";
+    return "Dinner";
   } else if (lastLetter === "b") {
-    return "Stormy";
+    return "Breakfast";
   } else if (lastLetter === "c") {
-    return "Spotty";
+    return "Lunch";
   } else {
-    return "Sunny";
+    return "Coffee";
   }
 }
 
 //generate suffix
-function genSuffix(favAnimal) {
-  return `of the ${favAnimal}`;
+function genSuffix(favoriteAnimal) {
+  return `of the ${favoriteAnimal}`;
 }
 
 //master function to assemble full name
@@ -72,17 +73,18 @@ function genFullName() {
   //generate each part of the name using helper functions
   const prefix = genPrefix(firstName);
   const newFirstName = genFirstName(firstName);
-  const genMiddleName = genMiddleName(roadType, favColor);
+  const genMiddleNamee = genMiddleName(roadType, favoriteColor);
   const newLastName = genLastName(lastName);
-  const suffix = genSuffix(favAnimal);
+  const newSuffix = genSuffix(favoriteAnimal);
   // functions to capital word
-  const capitalizedPrefix = tocapitalize(prefix);
+  const capitalizePrefix = tocapitalize(prefix);
   const capitalizedFirstName = tocapitalize(newFirstName);
-  const capitalizedMiddleName = tocapitalize(MiddleName);
+  const capitalizedMiddleName = tocapitalize(genMiddleNamee);
   const capitalizedLastName = tocapitalize(newLastName);
+  const capitalizednewsuffix = tocapitalize(newSuffix);
 
   //combine all parts to create full name
-  const fullName = `${capitalizePrefix} ${capitalizedFirstName} ${capitalizedMiddleName} ${capitalizedLastName}`;
+  const fullName = `${capitalizePrefix} ${capitalizedFirstName} ${capitalizedMiddleName} ${capitalizedLastName} ${capitalizednewsuffix}`;
 
   document.getElementById("result").textContent = fullName;
 }

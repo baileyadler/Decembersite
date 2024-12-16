@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title> What's My Mysterious Name? </title>
+        <title> What's Your Vacation Name? </title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -27,8 +27,8 @@
             <!--Greeting and Instructions-->
          <div class="container">
             <div class="text-center mb-4">
-                <h1>What is your Mysterious hero's name?</h1>
-                <p>Complete the form to find out your mystery name!</p>
+                <h1>What is your Vacation name?</h1>
+                <p>Complete the form to find out your Vacation name!</p>
             </div>
                 <form id="fantasyForm" class="mb-4">
                     <div class="mb-3">
@@ -46,8 +46,8 @@
              <option value="road">Road</option>
              <option value="street">Street</option>
              <option value="court">Court</option>
-             <option value="lane">lane</option>
-             <option value="boulevard">Boulevard</option>
+             <option value="avenue">Avenue</option>
+             <option value="boulevard">Other</option>
              </select>
               </div>
 
@@ -62,7 +62,7 @@
                         <label for="favoriteAnimal" class="form-label">Favorite Animal</label>
                         <input type="text" class="form-control" id="favoriteAnimal" placeholder="Enter your favorite animal">
                     </div>
-                    <div class="btn btn-info w-100" onclick="genFullName()">Generate name</div>
+                    <div class="btn w-100" role="button" onclick="genFullName()">Generate name</div>
                     </form>
                     <div id="result">
 
