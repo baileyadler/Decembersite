@@ -1,34 +1,46 @@
-body{
- background-image: url(calm.avif);
- background-repeat: no-repeat;
- background-size: cover;
+body {
+  background-image: url(sky.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 h1 {
   font-family: "gimlet-display", serif;
   font-weight: 400;
   font-style: normal;
-  margin: 30px;
+  margin: 28px;
 }
 p {
   font-family: "gimlet-display", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 28px;
+  font-size: 26px;
 }
-#result{
+#result {
   font-family: "gimlet-display", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 40px;
-  color:black;
+  font-size: 36px;
+  color: rgb(6, 75, 250);
   text-align: center;
 }
-div.btn{
-background-image: linear-gradient(180deg, rgb(228, 164, 194), rgb(247, 75, 232));
-box-shadow: 10px 6px rgb(236, 179, 232);
-border-color: white;
-font-family: "gimlet-display", serif;
-font-weight: 400;
-font-style: normal;
-font-size: 30px;
+div.btn {
+  background-image: linear-gradient(
+    180deg,
+    rgb(46, 120, 204),
+    rgb(152, 182, 236)
+  );
+  box-shadow: 2px 3px rgb(6, 75, 250);
+  font-family: "gimlet-display", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color:white;
+}
+.plane {
+  width: 22%;
+}
+.form-control {
+  font-family: "baldufa-greek", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }

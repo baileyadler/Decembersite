@@ -22,6 +22,46 @@ function genFirstName(firstName) {
     return "Europe";
   } else if (firstLetter === "f") {
     return "Florida";
+  } else if (firstLetter === "g") {
+    return "Georgia";
+  } else if (firstLetter === "h") {
+    return "Hawaii";
+  } else if (firstLetter === "i") {
+    return "Indiana";
+  } else if (firstLetter === "j") {
+    return "Japan";
+  } else if (firstLetter === "k") {
+    return "Kenya";
+  } else if (firstLetter === "l") {
+    return "Louisiana";
+  } else if (firstLetter === "m") {
+    return "Maine";
+  } else if (firstLetter === "n") {
+    return "Netherlands";
+  } else if (firstLetter === "o") {
+    return "Ohio";
+  } else if (firstLetter === "p") {
+    return "Portugal";
+  } else if (firstLetter === "q") {
+    return "Quebec";
+  } else if (firstLetter === "r") {
+    return "Rome";
+  } else if (firstLetter === "s") {
+    return "Spain";
+  } else if (firstLetter === "t") {
+    return "Thailand";
+  } else if (firstLetter === "u") {
+    return "Ukraine";
+  } else if (firstLetter === "v") {
+    return "Virginia";
+  } else if (firstLetter === "w") {
+    return "Wisconsin";
+  } else if (firstLetter === "x") {
+    return "Italy";
+  } else if (firstLetter === "y") {
+    return "Yemen";
+  } else if (firstLetter === "z") {
+    return "Zurich";
   } else {
     return "Home";
   }
@@ -30,15 +70,15 @@ function genFirstName(firstName) {
 //Generate middle name
 function genMiddleName(roadType, favColor) {
   if (roadType === "road") {
-    return `${favColor}ridge`;
+    return `${favColor}sunny`;
   } else if (roadType === "street") {
-    return `${favColor}son`;
+    return `${favColor}rainy`;
   } else if (roadType === "court") {
-    return `${favColor}field`;
+    return `${favColor}stormy`;
   } else if (roadType === "avenue") {
-    return `${favColor}man`;
+    return `${favColor}snowy`;
   } else {
-    return `${favColor}stone`;
+    return `${favColor}windy`;
   }
 }
 
@@ -46,13 +86,17 @@ function genMiddleName(roadType, favColor) {
 function genLastName(lastName) {
   const lastLetter = lastName.charAt(lastName.length - 1).toLowerCase();
   if (lastLetter === "a") {
-    return "Dinner";
+    return "Beach";
   } else if (lastLetter === "b") {
-    return "Breakfast";
+    return "Pool";
   } else if (lastLetter === "c") {
-    return "Lunch";
+    return "Ocean";
+  } else if (lastLetter === "d") {
+    return "Shore";
+  } else if (lastLetter === "e") {
+    return "Sea";
   } else {
-    return "Coffee";
+    return "Bay";
   }
 }
 
