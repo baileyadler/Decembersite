@@ -18,7 +18,8 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://use.typekit.net/fmp1tvq.css">
         <link rel="stylesheet" href="https://use.typekit.net/zwq2pss.css">
-        <link rel="stylesheet" href="https://use.typekit.net/zwq2pss.css">
+        <link rel="stylesheet" href="https://use.typekit.net/zwq2pss.css"> 
+        <link rel="stylesheet" href="https://use.typekit.net/rpa3uvd.css">
     </head>
     <body>
         <header>
@@ -27,22 +28,22 @@
         <main>
             <!--Greeting and Instructions-->
          <div class="container">
-            <div class="text-center mb-4">
-                <h1>What is your Vacation name?</h1>
+            <div class="text-center mb-2">
+                <h1>What is your vacation name?</h1>
                 <img src="airplane.webp" class="plane">
-                <p>Complete the form to find out your Vacation name!</p>
+                <p>Complete the form to find out your vacation name!</p>
             </div>
-                <form id="fantasyForm" class="mb-4">
-                    <div class="mb-3">
+                <form id="fantasyForm" class="mb-2">
+                    <div class="mb-2">
                         <label for="firstName" class="form-label">First Name</label>
                         <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
                     </div>
-                    <form id="fantasyForm" class="mb-4">
+                    <form id="fantasyForm" class="mb-2">
                         <div class="mb-3">
                             <label for="lastName" class="form-label">Last Name</label>
                             <input type="text" class="form-control" id="lastName" placeholder="Enter your first name">
                         </div>
-              <div class="mb-3">
+              <div class="mb-2">
             <label for="roadType" class="form-label">Choose Road type</label> 
              <select id="roadType" class="form-select">
              <option value="road">Road</option>
@@ -53,17 +54,21 @@
              </select>
               </div>
 
-              <form id="fantasyForm" class="mb-4">
-                <div class="mb-3">
+              <form id="fantasyForm" class="mb-2">
+                <div class="mb-2">
                     <label for="favoriteColor" class="form-label">Favorite Color</label>
                     <input type="text" class="form-control" id="favoriteColor" placeholder="Enter your favorite color">
                 </div>
 
-                <form id="fantasyForm" class="mb-4">
-                    <div class="mb-3">
+                <form id="fantasyForm" class="mb-2">
+                    <div class="mb-2">
                         <label for="favoriteAnimal" class="form-label">Favorite Animal</label>
                         <input type="text" class="form-control" id="favoriteAnimal" placeholder="Enter your favorite animal">
                     </div>
+                    <div class="mb-2 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check</label>
+                      </div>
                     <div class="btn w-100" role="button" onclick="genFullName()">Generate name</div>
                     </form>
                     <div id="result">
