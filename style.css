@@ -2,13 +2,14 @@ body {
   background-image: url(sky.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 h1 {
   font-family: "gimlet-display", serif;
   font-weight: 400;
   font-style: normal;
   margin-top: 40px;
-  color: rgb(65, 36, 11);
+  color: rgb(105, 60, 0);
 }
 p {
   font-family: "gimlet-display", serif;
