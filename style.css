@@ -49,6 +49,8 @@ div.btn:hover{
   font-family: "baldufa-greek", sans-serif;
   font-weight: 400;
   font-style: normal;
+  background-color: rgb(241, 221, 183);
+  border: 2px solid black;
 }
 .form-label{
   font-family: "gimlet-display", serif;
@@ -56,3 +58,4 @@ div.btn:hover{
   font-style: normal;
   font-size: 20px;
 }
+

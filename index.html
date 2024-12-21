@@ -28,8 +28,8 @@
         <main>
             <!--Greeting and Instructions-->
          <div class="container">
-
-            
+            <div class="row">
+                <div class="col-12">
             <div class="text-center mb-2">
                 <h1>What is your vacation name?</h1>
                 <img src="airplane.webp" class="plane">
@@ -48,7 +48,7 @@
               <div class="mb-2">
             <label for="roadType" class="form-label">Choose Road type</label> 
              <select id="roadType" class="form-select">
-             <option value="road">Road</option>
+             <option value="road"> Road</option>
              <option value="street">Street</option>
              <option value="court">Court</option>
              <option value="avenue">Avenue</option>
@@ -58,8 +58,8 @@
 
               <form id="fantasyForm" class="mb-2">
                 <div class="mb-2">
-                    <label for="favoriteColor" class="form-label">Favorite Color</label>
-                    <input type="text" class="form-control" id="favoriteColor" placeholder="Enter your favorite color">
+                    <label for="favoriteSport" class="form-label">Favorite Sport</label>
+                    <input type="text" class="form-control" id="favoriteSport" placeholder="Enter your favorite sport">
                 </div>
 
                 <form id="fantasyForm" class="mb-2">
@@ -73,17 +73,23 @@
                       </div>
                     <div class="btn w-100" role="button" onclick="genFullName()">Generate name</div>
                     </form>
+                
                     <div id="result">
-
                     </div>
+                </div>
+                </div>
+                    </div>
+        
             <!--Information input form-->
             
         
          </div>
         </main>
         <footer>
+        
             <!-- place footer here -->
         </footer>
+
         <!-- Bootstrap JavaScript Libraries -->
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

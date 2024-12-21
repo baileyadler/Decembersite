@@ -68,17 +68,17 @@ function genFirstName(firstName) {
 }
 
 //Generate middle name
-function genMiddleName(roadType, favColor) {
+function genMiddleName(roadType, favSport) {
   if (roadType === "road") {
-    return `${favColor}sunny`;
+    return `${favSport}sunny`;
   } else if (roadType === "street") {
-    return `${favColor}rainy`;
+    return `${favSport}rainy`;
   } else if (roadType === "court") {
-    return `${favColor}stormy`;
+    return `${favSport}stormy`;
   } else if (roadType === "avenue") {
-    return `${favColor}snowy`;
+    return `${favSport}snowy`;
   } else {
-    return `${favColor}windy`;
+    return `${favSport}windy`;
   }
 }
 
@@ -111,13 +111,13 @@ function genFullName() {
   const firstName = document.getElementById("firstName").value.trim();
   const lastName = document.getElementById("lastName").value.trim();
   const roadType = document.getElementById("roadType").value;
-  const favoriteColor = document.getElementById("favoriteColor").value.trim();
+  const favoriteSport = document.getElementById("favoriteSport").value.trim();
   const favoriteAnimal = document.getElementById("favoriteAnimal").value.trim();
 
   //generate each part of the name using helper functions
   const prefix = genPrefix(firstName);
   const newFirstName = genFirstName(firstName);
-  const genMiddleNamee = genMiddleName(roadType, favoriteColor);
+  const genMiddleNamee = genMiddleName(roadType, favoriteSport);
   const newLastName = genLastName(lastName);
   const newSuffix = genSuffix(favoriteAnimal);
   // functions to capital word
