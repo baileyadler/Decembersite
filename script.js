@@ -1,7 +1,7 @@
 "use strict";
-//generate prefix of name
+//generate prefix of name (used or operator)
 function genPrefix(firstName) {
-  if (firstName.length > 4) {
+  if (firstName.length > 4 || firstName.length === 2) {
     return "Plane";
   } else {
     return "Ferry";
@@ -82,18 +82,18 @@ function genMiddleName(roadType, favColor) {
   }
 }
 
-//generate last name
+//generate last name (used or operator)
 function genLastName(lastName) {
   const lastLetter = lastName.charAt(lastName.length - 1).toLowerCase();
   if (lastLetter === "a") {
     return "Beach";
-  } else if (lastLetter === "b") {
+  } else if (lastLetter === "b" || lastLetter === "f") {
     return "Pool";
-  } else if (lastLetter === "c") {
+  } else if (lastLetter === "c" || lastLetter === 'g') {
     return "Ocean";
-  } else if (lastLetter === "d") {
+  } else if (lastLetter === "d" || lastLetter === 'h') {
     return "Shore";
-  } else if (lastLetter === "e") {
+  } else if (lastLetter === "e" || lastLetter === 'i') {
     return "Sea";
   } else {
     return "Bay";
