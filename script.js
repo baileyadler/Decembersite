@@ -10,28 +10,58 @@ function genPrefix(firstName) {
 //generate first name of name
 function genFirstName(firstName) {
   const firstLetter = firstName.charAt(0).toLowerCase();
-  if (firstLetter === "a" && firstLetter === "b") {
+  if (firstLetter === "a") {
     return "Aruba";
-  } else if (firstLetter === "c" && firstLetter === "d") {
+  } else if (firstLetter === "b") {
+    return "Bermuda";
+  } else if (firstLetter === "c") {
     return "Connecticut";
-  } else if (firstLetter === "e" && firstLetter === "f") {
+  } else if (firstLetter === "d") {
+    return "Delaware";
+  } else if (firstLetter === "e") {
     return "Europe";
-  } else if (firstLetter === "g" && firstLetter === "h") {
+  } else if (firstLetter === "f") {
+    return "Florida";
+  } else if (firstLetter === "g") {
     return "Georgia";
-  } else if (firstLetter === "i" && firstLetter === "j") {
+  } else if (firstLetter === "h") {
+    return "Hawaii";
+  } else if (firstLetter === "i") {
     return "Indiana";
-  } else if (firstLetter === "k" && firstLetter === "l") {
+  } else if (firstLetter === "j") {
+    return "Japan";
+  } else if (firstLetter === "k") {
     return "Kenya";
-  } else if (firstLetter === "m" && firstLetter === "n") {
+  } else if (firstLetter === "l") {
+    return "Louisiana";
+  } else if (firstLetter === "m") {
     return "Maine";
-  } else if (firstLetter === "o" && firstLetter === "p") {
+  } else if (firstLetter === "n") {
+    return "Netherlands";
+  } else if (firstLetter === "o") {
     return "Ohio";
-  } else if (firstLetter === "q" && firstLetter === "r") {
+  } else if (firstLetter === "p") {
+    return "Portugal";
+  } else if (firstLetter === "q") {
     return "Quebec";
-  } else if (firstLetter === "s" && firstLetter === "t") {
+  } else if (firstLetter === "r") {
+    return "Rome";
+  } else if (firstLetter === "s") {
     return "Spain";
-  } else if (firstLetter === "u" && firstLetter === "v") {
+  } else if (firstLetter === "t") {
+    return "Thailand";
+  } else if (firstLetter === "u") {
     return "Ukraine";
+  } else if (firstLetter === "v") {
+    return "Virginia";
+  } else if (firstLetter === "w") {
+    return "Wisconsin";
+  } else if (firstLetter === "x") {
+    return "Italy";
+  } else if (firstLetter === "y") {
+    return "Yemen";
+  } else if (firstLetter === "z") {
+    return "Zurich";
   } else {
     return "Home";
   }
@@ -59,11 +89,11 @@ function genLastName(lastName) {
     return "Beach";
   } else if (lastLetter === "b" || lastLetter === "f") {
     return "Pool";
-  } else if (lastLetter === "c" || lastLetter === "g") {
+  } else if (lastLetter === "c" || lastLetter === 'g') {
     return "Ocean";
-  } else if (lastLetter === "d" || lastLetter === "h") {
+  } else if (lastLetter === "d" || lastLetter === 'h') {
     return "Shore";
-  } else if (lastLetter === "e" || lastLetter === "i") {
+  } else if (lastLetter === "e" || lastLetter === 'i') {
     return "Sea";
   } else {
     return "Bay";
