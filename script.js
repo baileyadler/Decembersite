@@ -1,5 +1,8 @@
 "use strict";
-//generate prefix of name (used or operator)
+let userWelcome = alert(
+  "Welcome! Please fill out all required fields appropriately."
+);
+//generate prefix of name and used or operator
 function genPrefix(firstName) {
   if (firstName.length > 4 || firstName.length === 2) {
     return "Plane";
@@ -7,78 +10,79 @@ function genPrefix(firstName) {
     return "Ferry";
   }
 }
-//generate first name of name
+//generate first name of name and used switch case
 function genFirstName(firstName) {
   const firstLetter = firstName.charAt(0).toLowerCase();
-  if (firstLetter === "a") {
-    return "Aruba";
-  } else if (firstLetter === "b") {
-    return "Bermuda";
-  } else if (firstLetter === "c") {
-    return "Connecticut";
-  } else if (firstLetter === "d") {
-    return "Delaware";
-  } else if (firstLetter === "e") {
-    return "Europe";
-  } else if (firstLetter === "f") {
-    return "Florida";
-  } else if (firstLetter === "g") {
-    return "Georgia";
-  } else if (firstLetter === "h") {
-    return "Hawaii";
-  } else if (firstLetter === "i") {
-    return "Indiana";
-  } else if (firstLetter === "j") {
-    return "Japan";
-  } else if (firstLetter === "k") {
-    return "Kenya";
-  } else if (firstLetter === "l") {
-    return "Louisiana";
-  } else if (firstLetter === "m") {
-    return "Maine";
-  } else if (firstLetter === "n") {
-    return "Netherlands";
-  } else if (firstLetter === "o") {
-    return "Ohio";
-  } else if (firstLetter === "p") {
-    return "Portugal";
-  } else if (firstLetter === "q") {
-    return "Quebec";
-  } else if (firstLetter === "r") {
-    return "Rome";
-  } else if (firstLetter === "s") {
-    return "Spain";
-  } else if (firstLetter === "t") {
-    return "Thailand";
-  } else if (firstLetter === "u") {
-    return "Ukraine";
-  } else if (firstLetter === "v") {
-    return "Virginia";
-  } else if (firstLetter === "w") {
-    return "Wisconsin";
-  } else if (firstLetter === "x") {
-    return "Italy";
-  } else if (firstLetter === "y") {
-    return "Yemen";
-  } else if (firstLetter === "z") {
-    return "Zurich";
-  } else {
-    return "Home";
+  switch (firstLetter) {
+    case "a":
+      return "Aruba";
+    case "b":
+      return "Bermuda";
+    case "c":
+      return "Connecticut";
+    case "d":
+      return "Delaware";
+    case "e":
+      return "Europe";
+    case "f":
+      return "Florida";
+    case "g":
+      return "Georgia";
+    case "h":
+      return "Hawaii";
+    case "i":
+      return "Indiana";
+    case "j":
+      return "Japan";
+    case "k":
+      return "Kenya";
+    case "l":
+      return "Louisiana";
+    case "m":
+      return "Maine";
+    case "n":
+      return "Netherlands";
+    case "o":
+      return "Ohio";
+    case "p":
+      return "Portugal";
+    case "q":
+      return "Quebec";
+    case "r":
+      return "Rome";
+    case "s":
+      return "Spain";
+    case "t":
+      return "Thailand";
+    case "u":
+      return "Ukraine";
+    case "v":
+      return "Virginia";
+    case "w":
+      return "Wisconsin";
+    case "x":
+      return "Italy";
+    case "y":
+      return "Yemen";
+    case "z":
+      return "Zurich";
   }
 }
 
-//Generate middle name
-function genMiddleName(roadType, favSport) {
-  if (roadType === "road") {
-    return `${favSport}sunny`;
-  } else if (roadType === "street") {
-    return `${favSport}rainy`;
-  } else if (roadType === "court") {
-    return `${favSport}stormy`;
-  } else if (roadType === "avenue") {
-    return `${favSport}snowy`;
+//Generate middle name and used AND operator
+function genMiddleName(roadType, favoriteMonth) {
+  if (roadType === "road" && favoriteMonth === "january") {
+    return `${favoriteMonth}sunny`;
+  } else if (roadType === "street" && favoriteMonth === "february") {
+    return `${favoriteMonth}rainy`;
+  } else if (roadType === "court" && favoriteMonth === "march") {
+    return `${favoriteMonth}stormy`;
+  } else if (roadType === "avenue" && favoriteMonth === "april") {
+    return `${favoriteMonth}snowy`;
+  } else if (roadType === 'other' && favoriteMonth === 'may') {
+    return `${favoriteMonth}cloudy`;
   } else {
-    return `${favSport}windy`;
+    return `${favoriteMonth}windy`;
   }
 }
 
@@ -89,11 +93,11 @@ function genLastName(lastName) {
     return "Beach";
   } else if (lastLetter === "b" || lastLetter === "f") {
     return "Pool";
-  } else if (lastLetter === "c" || lastLetter === 'g') {
+  } else if (lastLetter === "c" || lastLetter === "g") {
     return "Ocean";
-  } else if (lastLetter === "d" || lastLetter === 'h') {
+  } else if (lastLetter === "d" || lastLetter === "h") {
     return "Shore";
-  } else if (lastLetter === "e" || lastLetter === 'i') {
+  } else if (lastLetter === "e" || lastLetter === "i") {
     return "Sea";
   } else {
     return "Bay";
@@ -101,8 +105,8 @@ function genLastName(lastName) {
 }
 
 //generate suffix
-function genSuffix(favoriteAnimal) {
-  return `of the ${favoriteAnimal}`;
+function genSuffix(favoriteSeason) {
+  return `of the ${favoriteSeason}`;
 }
 
 //master function to assemble full name
@@ -111,15 +115,15 @@ function genFullName() {
   const firstName = document.getElementById("firstName").value.trim();
   const lastName = document.getElementById("lastName").value.trim();
   const roadType = document.getElementById("roadType").value;
-  const favoriteSport = document.getElementById("favoriteSport").value.trim();
-  const favoriteAnimal = document.getElementById("favoriteAnimal").value.trim();
+  const favoriteMonth = document.getElementById("favoriteMonth").value.trim();
+  const favoriteSeason = document.getElementById("favoriteSeason").value.trim();
 
   //generate each part of the name using helper functions
   const prefix = genPrefix(firstName);
   const newFirstName = genFirstName(firstName);
-  const genMiddleNamee = genMiddleName(roadType, favoriteSport);
+  const genMiddleNamee = genMiddleName(roadType, favoriteMonth);
   const newLastName = genLastName(lastName);
-  const newSuffix = genSuffix(favoriteAnimal);
+  const newSuffix = genSuffix(favoriteSeason);
   // functions to capital word
   const capitalizePrefix = tocapitalize(prefix);
   const capitalizedFirstName = tocapitalize(newFirstName);
