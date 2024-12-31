@@ -10,6 +10,7 @@ function genPrefix(firstName) {
     return "Ferry";
   }
 }
+
 //generate first name of name and used switch case
 function genFirstName(firstName) {
   const firstLetter = firstName.charAt(0).toLowerCase();
@@ -79,7 +80,7 @@ function genMiddleName(roadType, favoriteMonth) {
     return `${favoriteMonth}stormy`;
   } else if (roadType === "avenue" && favoriteMonth === "april") {
     return `${favoriteMonth}snowy`;
-  } else if (roadType === 'other' && favoriteMonth === 'may') {
+  } else if (roadType === "other" && favoriteMonth === "may") {
     return `${favoriteMonth}cloudy`;
   } else {
     return `${favoriteMonth}windy`;
@@ -117,6 +118,19 @@ function genFullName() {
   const roadType = document.getElementById("roadType").value;
   const favoriteMonth = document.getElementById("favoriteMonth").value.trim();
   const favoriteSeason = document.getElementById("favoriteSeason").value.trim();
+
+  // use or statement to make sure all fields are filled out
+  if (!firstName) {
+    alert("Invalid. Please fill out all fields");
+  } else if (!lastName) {
+    alert("Invalid. Please fill out all fields");
+  } else if (!roadType) {
+    alert("Invalid. Please fill out all fields");
+  } else if (!favoriteSeason) {
+    alert("Invalid. Please fill out all fields");
+  } else if (!favoriteMonth) {
+    alert("Invalid. Please fill out all fields.");
+  }
 
   //generate each part of the name using helper functions
   const prefix = genPrefix(firstName);
